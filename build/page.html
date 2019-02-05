@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Index page</title>
+    <title>Wooden</title>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
@@ -14,48 +14,20 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <h1>Index page</h1>
-      <p>Hello from partials/_header.html</p>
-      <svg class="icon icon-facebook">
-        <use xlink:href="img/sprite.svg#icon-facebook"></use>
-      </svg>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="checkbox">
-          <span class="checkbox__text">checkbox</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="exemple-name" checked>
-          <span class="checkbox__text">checkbox-checked</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <!-- begin input -->
-      <label class="radio">
-        <input type="radio" name="exemple-name">
-        <span class="radio__text">text</span>
-      </label>
-      <!-- end input -->
-      <!-- begin breadcrumbs -->
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#">Внутренняя</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span>Корзина</span>
-        </li>
-      </ul>
-      <!-- end breadcrumbs -->
-      <li>Item1</li>
-      <li>Item2</li>
+      <header class="header">
+        <div class="header__inner inner">
+          <a href="#" class="header__logo">
+            <img src="img/logo.png" alt="wooden logo" class="header__img">
+            <h1 class="header__title roboto">Wooden <span class="block">Doors</span></h1>
+          </a>
+          <div class="header__caption">Производство дверей по <span class="block">Вашим размерам</span></div>
+          <div class="header__right">
+            <div class="header__subtitle">Есть вопросы? Звоните!</div>
+            <a href="tel:+7 800 201-20-48" class="header__tel"><span>+7 800 </span>201-20-48</a>
+            <div class="header__subtitle header__subtitle_sm">с 9:00 до 22:00 без выходных</div>
+          </div>
+        </div>
+      </header>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
