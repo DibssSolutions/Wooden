@@ -1,0 +1,18 @@
+.price
+    +f(20px, 700, 1.2)
+    &_old
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            display: inline-block
+            width: 72px
+            height: 1px
+            background-color: $black
+            color: $black
+            +rotate(-10)
+            top: 11px
+            left: 50%
+            margin-left: -36px
+    &_sale
+        color: $coral

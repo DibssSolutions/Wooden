@@ -33,7 +33,7 @@
                                 <img src="img/{{item.img}}.png" alt="card img" class="card-benefit__img">
                             </div>
                             <h3 class="card-benefit__title title-m">{{item.title}}</h3>
-                            <p class="card-benefit__text">Экономия <br>{{item.text | safe}}</p>
+                            <div class="card-benefit__text">Экономия <br>{{item.text | safe}}</div>
                         </div>
                         {% else %}
                         <div class="card-benefit">
@@ -41,7 +41,7 @@
                                 <img src="img/{{item.img}}.png" alt="card img" class="card-benefit__img">
                             </div>
                             <h3 class="card-benefit__title title-m">{{item.title}}</h3>
-                            <p class="card-benefit__text">Экономия <br>{{item.text | safe}}</p>
+                            <div class="card-benefit__text">Экономия <br>{{item.text | safe}}</div>
                         </div>
                         {{mixins.icon('plus')}}
                     {% endif %}

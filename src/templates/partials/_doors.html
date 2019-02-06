@@ -1,0 +1,46 @@
+{% set doors = [
+    {
+        img: 'door1',
+        title: 'Дверь - симметрия',
+        price: '8490 ₽'
+    },
+    {
+        img: 'door2',
+        title: 'Дверь - асимметрия',
+        price: '8290 ₽'
+    },
+    {
+        img: 'door3',
+        title: 'Дверь - стандарт',
+        price: '8590 ₽',
+        sale: '7990 ₽'
+    },
+    {
+        img: 'door4',
+        title: 'Дверь - эксклюзив',
+        price: '8290 ₽'
+    }
+    ] %}
+<section class="door">
+        <div class="door__inner inner">
+            <h2 class="door__title title-l title-hr">Дверь от Wooden Doors</h2>
+            <div class="door__subtitle subtitle">Выбери идеальный вариант для своего дома</div>
+            <div class="door__wrap">
+                {% for item in doors %}
+                    <a href="#" class="door__item">
+                        <div class="door-item">
+                            <img src="img/{{item.img}}.png" alt="door{{index}}" class="door-item__img">
+                            <h4 class="door-item__title title-s">{{item.title}}</h4>
+                            <div class="door-item__price">
+                                <div class="price">{{item.price}}</div>
+                                <div class="price price_sale">{% if item.sale %}{{item.sale}}{% endif %}</div>
+                            </div>
+                            <div class="door-item__btn">
+                                <a href="#" class="btn btn_white">Описание &gt;</a>
+                            </div>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
