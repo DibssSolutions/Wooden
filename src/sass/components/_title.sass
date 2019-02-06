@@ -1,4 +1,37 @@
 .roboto
     font-family: $roboto
     +f(20px, 900, 0.9)
-    color: $yellow
+    color: $logo
+
+.title-hr
+    position: relative
+    &:after
+        content: ''
+        position: absolute
+        display: inline-block
+        width: 160px
+        height: 1px
+        background-color: $black
+        color: $black
+        left: 50%
+        bottom: 0
+        transform: translateX(-50%)
+.title-xl
+    +f(46px, 700, 1)
+    letter-spacing: 0.02em
+.title-l
+    +f(40px, 700, 1)
+    letter-spacing: 0.02em
+    padding-bottom: 15px
+.title-m
+    +f(24px, 700, 1.25)
+    letter-spacing: 0.02em
+.title-s
+    +f(20px, 700, 1.2)
+    letter-spacing: 0.02em
+
+.subtitle
+    +f(24px, 400, 1)
+    letter-spacing: 0.02em
+    margin-top: 23px
+

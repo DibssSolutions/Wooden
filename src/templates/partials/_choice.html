@@ -1,0 +1,40 @@
+{% set cards = [
+    {
+        img: 'choice1',
+        title: 'Ваши размеры',
+        text: 'Дверной блок изготавливается <span>по Вашим индивидуальным размерам</span>'
+    },
+    {
+        img: 'choice2',
+        title: 'Высокое качество',
+        text: 'Если Вас что-то не устроит, мы <span>бесплатно</span> заменим дверь либо вернем деньги'
+    },
+    {
+        img: 'choice3',
+        title: 'За 4 дня',
+        text: 'Если мы сорвем сроки, то Вам будет предоставлена <span>скидка 30%</span> от стоимости дверного блока'
+    },
+    {
+        img: 'choice4',
+        title: 'Оплата за результат',
+        text: 'Вы платите только тогда, когда получаете дверной блок'
+    }
+    ] %}
+<section class="choice">
+    <div class="choice__inner inner">
+        <h2 class="choice__title title-l">Почему нас выбрало свыше 850 клиентов?</h2>
+        <div class="choice__cards">
+            {% for item in cards %}
+                <div class="choice__item">
+                    <div class="card-gray">
+                        <div class="card-gray__img-wrap">
+                            <img src="img/{{item.img}}.png" alt="card img" class="card-gray__img">
+                        </div>
+                        <h3 class="card-gray__title title-m">{{item.title}}</h3>
+                        <p>{{item.text | safe}}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

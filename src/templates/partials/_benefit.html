@@ -1,0 +1,52 @@
+{% set benefit = [
+    {
+        img: 'benefit1',
+        title: 'За аренду магазинов',
+        text: '<span>1200 р.</span>'
+    },
+    {
+        img: 'benefit2',
+        title: 'Зарплату продавцам',
+        text: '<span>1150 р.</span>'
+    },
+    {
+        img: 'benefit3',
+        title: 'Процент посредникам',
+        text: '<span>800 р.</span>'
+    },
+    {
+        img: 'benefit4',
+        title: 'Искусственная накрутка за бренд',
+        text: '<span>1600 р.</span>'
+    }
+    ] %}
+<section class="benefit">
+    <div class="benefit__inner inner">
+        <h2 class="benefit__title title-l title-hr">Почему с нами выгодно?</h2>
+        <div class="benefit__subtitle subtitle">Закажи двери Wooden Doors напрямую от производителя и не плати</div>
+        <div class="benefit__cards">
+            {% for item in benefit %}
+                <div class="benefit__item">
+                    {% if loop.last %}
+                        <div class="card-benefit">
+                            <div class="card-benefit__img-wrap">
+                                <img src="img/{{item.img}}.png" alt="card img" class="card-benefit__img">
+                            </div>
+                            <h3 class="card-benefit__title title-m">{{item.title}}</h3>
+                            <p class="card-benefit__text">Экономия <br>{{item.text | safe}}</p>
+                        </div>
+                        {% else %}
+                        <div class="card-benefit">
+                            <div class="card-benefit__img-wrap">
+                                <img src="img/{{item.img}}.png" alt="card img" class="card-benefit__img">
+                            </div>
+                            <h3 class="card-benefit__title title-m">{{item.title}}</h3>
+                            <p class="card-benefit__text">Экономия <br>{{item.text | safe}}</p>
+                        </div>
+                        {{mixins.icon('plus')}}
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

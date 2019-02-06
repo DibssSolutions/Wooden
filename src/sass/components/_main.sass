@@ -1,0 +1,42 @@
+.main
+    color: $light
+    text-align: center
+    height: 705px
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: 50% 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    padding: 0 30px
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+        background-color: rgba(0, 0, 0, 0.75)
+    &__wrap
+        margin-top: -72px
+        z-index: 1
+    &__title
+        padding-bottom: 28px
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            display: inline-block
+            width: 354px
+            height: 1px
+            background-color: $white
+            color: $white
+            left: 50%
+            bottom: 0
+            transform: translateX(-50%)
+    &__subtitle
+        max-width: 500px
+        margin: 16px auto 0
+    &__btn
+        margin-top: 55px

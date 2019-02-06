@@ -1,6 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-facebook" viewBox="0 0 10 19">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><defs>
+        <style>
+            .cls-1{fill-rule:evenodd}
+        </style>
+    </defs><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
+</symbol><symbol id="icon-plus" viewBox="0 0 44 44">
+    
+    <path id="Forma_1" data-name="Forma 1" class="cls-1" d="M660 1818a5.974 5.974 0 0 1-6-5.94V1802h-10.059a6 6 0 0 1 0-12H654v-10.06a6 6 0 0 1 12 0V1790h10.059a6 6 0 0 1 0 12H666v10.06a5.974 5.974 0 0 1-6 5.94zm-16.059-26a4 4 0 0 0 0 8H656v12.06a4 4 0 0 0 8 0V1800h12.059a4 4 0 0 0 0-8H664v-12.06a4 4 0 0 0-8 0V1792h-12.059z" transform="translate(-638 -1774)"/>
 </symbol></svg>

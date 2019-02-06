@@ -9,6 +9,7 @@
         display: flex
         align-items: flex-end
         padding-right: 47px
+        padding-top: 5px
     &__img
         width: 54px
     &__title
@@ -16,6 +17,7 @@
     &__caption
         border-left: 2px solid $white
         padding: 10px 24px 0
+        margin-top: 15px
         +f(22px, 500, 1)
     &__right
         margin-left: auto
@@ -24,8 +26,13 @@
         color: $gray
         line-height: 2.3
         padding-left: 4px
+        letter-spacing: 0.02em
+        font-size: 20px
         &_sm
             font-size: 16px
-            line-height: 2.875
+            line-height: 1.9
+            letter-spacing: 0.02em
     &__tel
         +f(28px, 700, 0.64)
+        span
+            color: $dark-gray
